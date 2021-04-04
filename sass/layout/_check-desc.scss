@@ -1,0 +1,40 @@
+.modal-form-check-desc{
+    display:flex;
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.71;
+  align-items: center;
+  margin-right: 8px;
+  
+  letter-spacing: 0.03em;
+  
+  color: #757575;
+  }
+  
+  .modal-form-check-desc::before{
+    display:block;
+    content: "";
+    width:16px;
+    height: 16px;
+    border:1px solid #000000;
+  }
+  
+  
+.modal-form-term:checked + .modal-form-check-desc::before {
+  background-image: url("../images/sprite/check-mark.svg");
+  background-position: center;
+  border-color: 4px solid #2196f3;
+  cursor: pointer;
+  background-color: #2196f3;
+  border:none;
+}
+  
+  .modal-form-term:focus + .modal-form-check-desc::before{
+    box-shadow: 0 0 0 2px #2196f3;
+  }
+  
+  .contract{
+    color:#2196F3;
+  }
+  
